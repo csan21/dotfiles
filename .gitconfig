@@ -1,0 +1,12 @@
+[user]
+    name = ''
+	email = ''
+	signingkey = ''
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	cleanup = "branch | grep -v "master" | xargs git branch -D"
+[core]
+	ignorecase = true
