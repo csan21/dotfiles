@@ -1,8 +1,6 @@
-export PATH=~/bin:$PATH
+export PATH=~/bin:$PATH:$HOME/.cargo/bin:$PATH:$HOME/.rbenv/bin:$PATH
 
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+parse_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' }
 export PS1="\n\[\e[1;31m\]\u \[\e[1;33m\]\W\[\e[0;34m\]\$(parse_git_branch)\[\e[1;32m\] ➜ \[\e[m\]"
 export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1
@@ -18,3 +16,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 alias pycharm="open -a /Applications/PyCharm*.app"
+
+eval "$(rbenv init -)"
