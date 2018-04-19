@@ -1,0 +1,11 @@
+alias cleanbr="git branch | grep -v "master" | xargs git branch -D"
+alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
+
+alias ..="cd.."
+alias ...="cd ../.."
+alias ....="cd ../../..
+
+alias gbr="git branch"
+alias gst="git status"
+alias gpull="git pull"
+alias gpush="git push"

@@ -14,4 +14,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
-sudo nvram SystemAudioVolume=" "
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+sudo nvram SystemAudioVolume=%80

@@ -15,6 +15,4 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-alias pycharm="open -a /Applications/PyCharm*.app"
-
 eval "$(rbenv init -)"
